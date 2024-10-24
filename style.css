@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Shrikhand&display=swap");
+
+
+header {
+  /* height: 90px; */
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+.serchItem{
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+.movieImage{
+  top: 150px;
+}
+.logo {
+  display: block;
+  color: rgb(219, 20, 20);
+  font-weight: 900;
+  line-height: 80px;
+  padding: 0 30px;
+  font-size: 60px;
+  font-family: "Shrikhand";
+}
+.search-input {
+  align-items: right;
+  padding: 0 30px;
+  line-height: 60px;
+  width: 1000px;
+  border-radius: 8px;
+  padding-left: 30px;
+  /*^^왼쪽으로 띄우는거*/
+}
+.movie-container {
+  padding-top: 160px;
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  background-color: black;
+  color: white;
+}
+
+#bookmarkBtn {
+  color: #b41f1f;
+  box-shadow: 0 0 40px 40px #000000 inset, 0 0 0 0 #000000;
+  transition: all 150ms ease-in-out;
+  margin-right: 30px;
+  border-radius: 8px;
+  
+}
+
+#bookmarkBtn:hover {
+  box-shadow: 0 0 10px 0 #000000 inset, 0 0 10px 4px #000000;
+}
+
+.movieCard {
+  margin-top: 80px;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px solid white;
+ 
+
+}
+/*모달*/
+
+.movieCard img {
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+}
+.serchCard{  margin-top: 80px;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px solid white;
+}
+.serchInner{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  border: 1px solid white;
+}
+.modal-show {
+  display: flex;
+}
+
+.modal {
+  background-color: white;
+  width: 400px;
+  height: 600px;
+}
+.modal-background{
+  display: block;
+}
